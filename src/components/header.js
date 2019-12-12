@@ -18,7 +18,7 @@
       <Nav className="ml-auto mr-4">
       <Link to=""> <Nav.Link href="#home" className="text-white mr-4" >ADVISORY</Nav.Link> </Link>
       <NavDropdown title="CONSULTING" id="basic-nav-dropdown" className="text-white mr-4" style={{color:'white'}}>
-        <Link to="/pe-vc-firms"> <NavDropdown.Item  href="#link" >pe-vc-firms</NavDropdown.Item> </Link>
+        <Link to="/pe-vc-firms"> <NavDropdown.Item  href="#link" >Venture Capital & Private Equity Firms</NavDropdown.Item> </Link>
           <Link to="/small-medium"><NavDropdown.Item href="#action/3.1">small-medium-sized-businesses-smbs</NavDropdown.Item></Link>
           <Link to="/academic-institutions"><NavDropdown.Item href="#action/3.2">academic-institutions</NavDropdown.Item></Link>
           <Link to="/public-sector-iba"><NavDropdown.Item href="#action/3.2">public-sector-institutions-business-associations</NavDropdown.Item></Link>

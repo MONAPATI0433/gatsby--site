@@ -5,9 +5,6 @@ import { Link } from "gatsby"
 import { Container, Row, Card, Col } from "react-bootstrap"
 import image3 from '../images/bg-psi-p.jpg'
 import image4 from '../images/Update-file_Public-Sector.png'
-
-// import Img from "gatsby-image"
-// import { useStaticQuery, graphql } from "gatsby"
 class PUBLICSECTORIBA extends Component {
     render() {
         return (
@@ -20,8 +17,11 @@ class PUBLICSECTORIBA extends Component {
                     <h2 className="text-white" style={{ position: "relative", top: "-16rem", left: "75px" }}>public-sector-institutions-business-associations</h2>
                     <Container style={{ marginTop: "-70px" }}>
                         <Row>
-                            {/* <Col md={10}> */}
-                            <p>
+                        <Col md={6}>
+                        <img src={image4} style={{ width: "100%", height: "400px" }} />
+                        </Col>
+                        <Col md={6}>
+                            <p className="normal-para">
                                 AIQRATE is enabling public sector institutions, global & Indian business associations and industry consortium
                                 harness the power of AI to solve large, complex and unresolved problems as well as collaborating with policy
                                 makers and business associations stakeholders to position India as a premier nation in AI. Through our
@@ -29,76 +29,8 @@ class PUBLICSECTORIBA extends Component {
                                 AI reports and analysis,</strong> we have been contributing to making a significant impact to public sector institutions
                                 and business associations.
                                 </p>
-                            <p>AIQRATE consulting themes for Public Sector Institutions & Business Associations are:</p>
-                            <Col md={7}>
-                                <Card className="mt-5 mb-5 mr-5">
-                                    <Card.Body>
-                                        <img src={image4} style={{ width: "100%", height: "400px" }} />
-                                    </Card.Body>
-                                </Card>
+                            <p className="normal-para">AIQRATE consulting themes for Public Sector Institutions & Business Associations are:</p>
                             </Col>
-                            {/* </Col> */}
-                            {/* <Col md={4}>
-                                    <div className="input-group">
-                                        <input type="text" className="form-control" placeholder="Search this blog"
-                                            style={{
-                                                height: "54px"
-                                            }}
-                                        />
-                                        <div className="input-group-append">
-                                            <button className="btn btn-secondary" type="button">
-                                                Search
-                                        </button>
-                                        </div>
-                                    </div>
-                                    <h5 className="mt-5">AIQRATIONS</h5>
-                                    <hr></hr>
-                                    <Media>
-                                        <img src={image3} alt="no image" style={{ height: "120px", width: "40%" }} />
-                                        <Media.Body>
-                                            <p className="ml-2">
-                                                AI And Societal Impact – Addressing Large, Complex Unresolved Problems With AI
-                                            </p>
-                                            <Link class="moreless-button ml-2" to="/" style={{ color: "blue" }}>Read more >></Link>
-                                        </Media.Body>
-                                    </Media>
-                                    <Media>
-                                        <img src={image3} alt="no image" style={{ height: "120px", width: "40%" }} />
-                                        <Media.Body>
-                                            <p className="ml-2">
-                                                Detecting depression early with AI
-                                            </p>
-                                            <Link class="moreless-button ml-2" to="/" style={{ color: "blue" }}>Read more >></Link>
-                                        </Media.Body>
-                                    </Media>
-                                    <Media>
-                                        <img src={image3} alt="no image" style={{ height: "120px", width: "40%" }} />
-                                        <Media.Body>
-                                            <p className="ml-2">
-                                                3 Ways To Human Centric AI
-                                            </p>
-                                            <Link class="moreless-button ml-2" to="/" style={{ color: "blue" }}>Read more >></Link>
-                                        </Media.Body>
-                                    </Media>
-                                    <Media>
-                                        <img src={image3} alt="no image" style={{ height: "120px", width: "40%" }} />
-                                        <Media.Body>
-                                            <p className="ml-2">
-                                                Autism care with AI
-                                            </p>
-                                            <Link class="moreless-button ml-2" to="/" style={{ color: "blue" }}>Read more >></Link>
-                                        </Media.Body>
-                                    </Media>
-                                    <Media>
-                                        <img src={image3} alt="no image" style={{ height: "120px", width: "40%" }} />
-                                        <Media.Body>
-                                            <p className="ml-2">
-                                                AI & Humanity – Existential Threat or Co-exist Attainability?
-                                            </p>
-                                            <Link class="moreless-button ml-2" to="/" style={{ color: "blue" }}>Read more >></Link>
-                                        </Media.Body>
-                                    </Media>
-                                </Col> */}
                         </Row>
                     </Container>
                     <div className="container">

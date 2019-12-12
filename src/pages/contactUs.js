@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Layout from "../components/layout"
 import { Col, Container, Row, Media } from 'react-bootstrap'
 import './contact.css'
+import { Link } from "gatsby"
+import image3 from '../images/bg-contact-p.jpg'
 
 import {
   FaChessQueen
@@ -10,11 +12,16 @@ class contactUs extends Component {
   render() {
     return (
       <Layout location={this.props.location}>
+        <img src={image3} style={{ height: "300px", width: "100%", }} />
+        <div className="d-flex" style={{ position: "relative", top: "-18.9rem", left: "75px", fontSize: "12px" }}>
+                        <p className="text-white" ><Link to="/" style={{ color: "white" }}>Home&nbsp;</Link>/</p><p><Link to="/About-Us" style={{ color: "white" }}>&nbsp;About Us /</Link></p><p><Link to="/" style={{ color: "white" }}>&nbsp;Contact</Link></p>
+                    </div>
+                    <h2 className="text-white" style={{ position: "relative", top: "-16rem", left: "75px" }}>Contact</h2>
         <div style={{
           backgroundColor: "#000000", width: "100%", height: "50px",
-          lineHeight: '1.3rem'
+          lineHeight: '1.3rem',marginTop:"-108px"
         }}>
-          <h5 className="text-center" style={{ color: "#c3baba", fontWeight: "robot", position: "relative", top: "15px", fontSize: '16px' }}>
+          <h5 className="text-center" style={{ color: "#c3baba", fontWeight: "robot", position: "relative", top: "10px", fontSize: '16px' }}>
             <span className="text-white" style={{ fontWeight: "bold" }}>
               THANKS&nbsp;&nbsp;
                           </span>
@@ -24,7 +31,7 @@ class contactUs extends Component {
 
         <div className="mb-5" style={{backgroundColor: "#f4f4f4",height:"200px"}}>
           <Row>
-            <Col className="mt-5">
+            <Col className="mt-5 ml-5">
               <Media>
                 <FaChessQueen />
                 <Media.Body>
@@ -38,7 +45,7 @@ class contactUs extends Component {
               <Media>
                 <FaChessQueen />
                 <Media.Body>
-                  <p className="mt-2">SET UP DEEP DIVE ADVISORY SESSION</p>
+                  <p className="mt-2 normal-para">SET UP DEEP DIVE ADVISORY SESSION</p>
                   <hr style={{ height: "2px", backgroundColor: "#0076da", position: "relative", left: "-55px" }}></hr>
                 </Media.Body>
               </Media>
@@ -47,7 +54,7 @@ class contactUs extends Component {
               <Media>
                 <FaChessQueen />
                 <Media.Body>
-                  <p className="mt-2">PARTNER WITH<br></br>
+                  <p className="mt-2 normal-para">PARTNER WITH<br></br>
                     US</p>
                   <hr style={{ height: "2px", backgroundColor: "#0076da", position: "relative", left: "-55px" }}></hr>
                 </Media.Body>
@@ -57,7 +64,7 @@ class contactUs extends Component {
               <Media>
                 <FaChessQueen />
                 <Media.Body>
-                  <p className="mt-2">PRESS<br></br>
+                  <p className="mt-2 normal-para">PRESS<br></br>
                     ENQUIRIES</p>
                   <hr style={{ height: "2px", backgroundColor: "#0076da", position: "relative", left: "-55px" }}></hr>
                 </Media.Body>
@@ -69,8 +76,8 @@ class contactUs extends Component {
           <Row>
             <div className="text-center">
               <h4><strong>BECOME </strong>THE CLIENT</h4>
-              <p style={{ fontSize: "14px" }}>Please leave your details with us with your query and we will get in touch with you swiftly. Alternatively, please reach directly over call or WhatsApp our Chief Client Officer , Rohan @</p>
-              <p style={{ fontSize: "14px" }}>+91  9818002307</p>
+              <p className="normal-para" style={{ fontSize: "14px" }}>Please leave your details with us with your query and we will get in touch with you swiftly. Alternatively, please reach directly over call or WhatsApp our Chief Client Officer , Rohan @</p>
+              <p className="normal-para" style={{ fontSize: "14px" }}>+91  9818002307</p>
             </div>
           </Row>
         </Container>
@@ -115,7 +122,7 @@ class contactUs extends Component {
               </div>
             </div>
             <div className="text-center">
-              <p style={{ fontSize: "12px", fontStyle: " italic" }}>By submitting your details, you are consenting to <strong>AIQRATE</strong> advisory & consulting sending you further email communications about latest advisory services, consulting offerings and<strong>AIQRATIONS</strong>  which may interest you. To learn more on this topic, please read our privacy policy.</p>
+              <p className="normal-para" style={{ fontSize: "12px", fontStyle: " italic" }}>By submitting your details, you are consenting to <strong>AIQRATE</strong> advisory & consulting sending you further email communications about latest advisory services, consulting offerings and<strong>AIQRATIONS</strong>  which may interest you. To learn more on this topic, please read our privacy policy.</p>
             </div>
           </div>
         </div>
@@ -126,11 +133,11 @@ class contactUs extends Component {
                 <div className="card mt-5" style={{ width: '18rem' }}>
                   {/* <img className="card-img-top" src=".../images/analytics.png" alt="Card image cap" /> */}
                   <div className="card-body">
-                    <h5 className="card-title">SET UP DEEP DIVE ADVISORY SESSION</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <p className="text-center"><strong>Chief Client Officer, Rohan</strong></p>
-                    <p className="text-center">+91 9818002307</p>
-                    <p className="text-center"><a href="">abc@aiqrate.ai</a></p>
+                    <h5 className="card-title text-center">SET UP DEEP DIVE ADVISORY SESSION</h5>
+                    <p className="card-text normal-para text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p className="text-center normal-para"><strong>Chief Client Officer, Rohan</strong></p>
+                    <p className="text-center normal-para">+91 9818002307</p>
+                    <p className="text-center normal-para "><a href="">abc@aiqrate.ai</a></p>
                   </div>
                 </div>
 
@@ -139,11 +146,11 @@ class contactUs extends Component {
                 <div className="card mt-5" style={{ width: '18rem' }}>
                   {/* <img className="card-img-top" src=".../images/analytics.png" alt="Card image cap" /> */}
                   <div className="card-body">
-                    <h5 className="card-title">PARTNER WITH US</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <p className="text-center"><strong>Chief Technology Officer, NK</strong></p>
-                    <p className="text-center">+91 9818002307</p>
-                    <p className="text-center"><a href="">abc@aiqrate.ai</a></p>
+                    <h5 className="card-title text-center">PARTNER WITH US</h5>
+                    <p className="card-text normal-para text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p className="text-center normal-para"><strong>Chief Technology Officer, NK</strong></p>
+                    <p className="text-center normal-para">+91 9818002307</p>
+                    <p className="text-center normal-para"><a href="">abc@aiqrate.ai</a></p>
                   </div>
                 </div>
               </div>
@@ -151,11 +158,11 @@ class contactUs extends Component {
                 <div className="card mt-5" style={{ width: '18rem', }}>
                   {/* <img className="card-img-top" src=".../images/analytics.png" alt="Card image cap" /> */}
                   <div className="card-body">
-                    <h5 className="card-title">PRESS ENQUIRIES</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <p className="text-center"><strong>CEO, Sameer</strong></p>
-                    <p className="text-center">+91 9818002307</p>
-                    <p className="text-center"><a href="" style={{Color:"#0E76BC"}}>abc@aiqrate.ai</a></p>
+                    <h5 className="card-title text-center">PRESS ENQUIRIES</h5>
+                    <p className="card-text normal-para text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p className="text-center normal-para"><strong>CEO, Sameer</strong></p>
+                    <p className="text-center normal-para">+91 9818002307</p>
+                    <p className="text-center normal-para"><a href="" style={{Color:"#0E76BC"}}>abc@aiqrate.ai</a></p>
                   </div>
                 </div>
               </div>

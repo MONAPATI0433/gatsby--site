@@ -17,7 +17,7 @@
                     <Layout location={this.props.location}>
                         <img src={image3} alt="no image" style={{ height: "300px", width: "100%" }} />
                         <div className="d-flex" style={{ position: "relative", top: "-18.9rem", left: "75px", fontSize: "12px" }}>
-                            <p className="text-white" ><Link to="/" style={{ color: "white" }}>Home&nbsp;</Link>/</p><p><Link to="/About-Us" style={{ color: "white" }}>&nbsp;About Us /</Link></p><p><Link to="/" style={{ color: "white" }}>&nbsp;AIQRATE Team</Link></p>
+                            <p className="text-white " ><Link to="/" style={{ color: "white" }}>Home&nbsp;</Link>/</p><p><Link to="/About-Us" style={{ color: "white" }}>&nbsp;About Us /</Link></p><p><Link to="/" style={{ color: "white" }}>&nbsp;AIQRATE Team</Link></p>
                         </div>
                         <h2 className="text-white" style={{ position: "relative", top: "-16rem", left: "75px" }}>AIQRATE Team</h2>
                         <Container>
@@ -31,16 +31,16 @@
                                 </Col>
                                 </div>
                                 <Col className="matter"  style={{backgroundColor:"#f4f4f4",marginLeft:"-204px"}}>
-                                <p>
+                                <p className="normal-para">
                                 Sameer is a globally recognized AI advisor, business builder, evangelist and thought leader known for his deep knowledge, strategic consulting approaches 
                                 </p>
-                                <p>
+                                <p className="normal-para">
                                 Sameer is a globally recognized AI advisor, business builder, evangelist and thought leader known for his deep knowledge, strategic consulting approaches 
                                 </p>
-                                <p>
+                                <p className="normal-para">
                                 Sameer is a globally recognized AI advisor, business builder, evangelist and thought leader known for his deep knowledge, strategic consulting approaches 
                                 </p>
-                                <p>
+                                <p className="normal-para">
                                 Sameer is a globally recognized AI advisor, business builder, evangelist and thought leader known for his deep knowledge, strategic consulting approaches 
                                 </p>
                                 </Col>
@@ -58,16 +58,16 @@
                                 </Col>
                                 </div>
                                 <Col className="matter"  style={{marginLeft:"-204px"}}>
-                                <p>
+                                <p className="normal-para">
                                 Sameer is a globally recognized AI advisor, business builder, evangelist and thought leader known for his deep knowledge, strategic consulting approaches 
                                 </p>
-                                <p>
+                                <p className="normal-para">
                                 Sameer is a globally recognized AI advisor, business builder, evangelist and thought leader known for his deep knowledge, strategic consulting approaches 
                                 </p>
-                                <p>
+                                <p className="normal-para">
                                 Sameer is a globally recognized AI advisor, business builder, evangelist and thought leader known for his deep knowledge, strategic consulting approaches 
                                 </p>
-                                <p>
+                                <p className="normal-para">
                                 Sameer is a globally recognized AI advisor, business builder, evangelist and thought leader known for his deep knowledge, strategic consulting approaches 
                                 </p>
                                 </Col>
@@ -85,16 +85,16 @@
                                 </Col>
                                 </div>
                                 <Col className="matter"  style={{backgroundColor:"#f4f4f4",marginLeft:"-204px"}}>
-                                <p>
+                                <p className="normal-para">
                                 Sameer is a globally recognized AI advisor, business builder, evangelist and thought leader known for his deep knowledge, strategic consulting approaches 
                                 </p>
-                                <p>
+                                <p className="normal-para">
                                 Sameer is a globally recognized AI advisor, business builder, evangelist and thought leader known for his deep knowledge, strategic consulting approaches 
                                 </p>
-                                <p>
+                                <p className="normal-para">
                                 Sameer is a globally recognized AI advisor, business builder, evangelist and thought leader known for his deep knowledge, strategic consulting approaches 
                                 </p>
-                                <p>
+                                <p >
                                 Sameer is a globally recognized AI advisor, business builder, evangelist and thought leader known for his deep knowledge, strategic consulting approaches 
                                 </p>
                                 </Col>

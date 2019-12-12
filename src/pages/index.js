@@ -8,6 +8,7 @@
   // import Img from "gatsby-image"
   // import Image from '../components/image'
   import "./main.css"
+  import "./index.css"
   import image1 from '../images/bg-aiqrations-p.jpg'
   import image2 from '../images/bg-Alliance-p.jpg'
   import image3 from '../images/bg-academic-p.jpg'
@@ -60,23 +61,29 @@ import { GiTeamIdea, GiChessKnight } from "react-icons/gi"
               <Carousel>
   <Carousel.Item>
   <img src={image1} alt="no image" style={{ height: "300px", width: "100%" }} />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    <Carousel.Caption style={{position:"absolute",top:"20px"}}>
+    <h3>Venture Capital & Private Equity Firms</h3>
+      <p>At AIQRATE, with our proven expertise and seasoned experience coupled with bespoke frameworks and artifacts, 
+        we dive deep with you to craft your enterprise wide AI strategy.</p>
+        <Button variant="light" size="sm" style={{backgroundColor:"#f4f4f4"}}>MORE INFO</Button>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
   <img src={image2} alt="no image" style={{ height: "300px", width: "100%" }} />
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <Carousel.Caption style={{position:"absolute",top:"20px"}}>
+      <h3>small-medium-sized-businesses-smbs</h3>
+      <p>At AIQRATE, with our proven expertise and seasoned experience coupled with bespoke frameworks and artifacts, 
+        we dive deep with you to craft your enterprise wide AI strategy.</p>
+        <Button variant="light" size="sm" style={{backgroundColor:"#f4f4f4"}}>MORE INFO</Button>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
   <img src={image3} alt="no image" style={{ height: "300px", width: "100%" }} />
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    <Carousel.Caption style={{position:"absolute",top:"20px"}}>
+    <h3>academic-institutions</h3>
+    <p>At AIQRATE, with our proven expertise and seasoned experience coupled with bespoke frameworks and artifacts, 
+        we dive deep with you to craft your enterprise wide AI strategy.</p>
+        <Button variant="light" size="sm" style={{backgroundColor:"#f4f4f4"}}>MORE INFO</Button>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
@@ -246,10 +253,65 @@ import { GiTeamIdea, GiChessKnight } from "react-icons/gi"
         </CardGroup>
       </Row>
       <Row className="border">
-        <p className="card-para">
-          " Several enterprises look to use AI to optimize decision making. AI
-          can unlock opportunities that otherwise overlooked. "
-        </p>
+ <div className="card col-md-6 mt-5 mb-5">
+  <div id="carouselExampleControls" className="carousel slide" data-ride="carousel" data-interval={100000}>
+    <div className="w-100 carousel-inner" role="listbox">
+      <div className="carousel-item active">
+        <div className="carousel-caption">
+          <div className="row">
+            <div className="col-sm-3">
+              <img src="http://via.placeholder.com/200x200" alt className="rounded-circle img-fluid" />
+            </div>
+            <div className="col-sm-9">
+              <h3>Gives me hope</h3>
+              <small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small>
+              <small className="smallest mute">- Yayo Dudemous</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="carousel-item">
+        <div className="carousel-caption">
+          <div className="row">
+            <div className="col-sm-3">
+              <img src="http://via.placeholder.com/200x200" alt className="rounded-circle img-fluid" />
+            </div>
+            <div className="col-sm-9">
+              <h3>You will love it.</h3>
+              <small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small>
+              <small className="smallest mute">- Yayo Dudemous</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="carousel-item">
+        <div className="carousel-caption">
+          <div className="row">
+            <div className="col-sm-3">
+              <img src="http://via.placeholder.com/200x200" alt className="rounded-circle img-fluid" />
+            </div>
+            <div className="col-sm-9">
+              <h3>Velvet pouch!</h3>
+              <small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small>
+              <small className="smallest mute">- Yayo Dudemous</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="float-right navi">
+      <a className href="#carouselExampleControls" role="button" data-slide="prev">
+        <span className="carousel-control-prev-icon ico" aria-hidden="true" />
+        <span className="sr-only">Previous</span>
+      </a>
+      <a className href="#carouselExampleControls" role="button" data-slide="next">
+        <span className="carousel-control-next-icon ico" aria-hidden="true" />
+        <span className="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
+
       </Row>
 
       <h2 className="align-self-center">THE AIQRATE ADVANTAGE</h2>
