@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 import { Container } from "react-bootstrap"
-import image3 from '../images/bg-Whyweexist-p.png'
+// import image3 from '../images/bg-Whyweexist-p.png'
 // import Img from "gatsby-image"
 // import { useStaticQuery, graphql } from "gatsby"
 class Whyweexit extends Component {
@@ -13,7 +13,7 @@ class Whyweexit extends Component {
 
             <div>
                 <Layout location={this.props.location}>
-                    <img src={image3} style={{ height: "300px", width: "100%" }} />
+                    {/* <img src={image3} style={{ height: "300px", width: "100%" }} /> */}
                     <div className="d-flex" style={{ position: "relative", top: "-18.9rem", left: "75px", fontSize: "12px" }}>
                         <p className="text-white" ><Link to="/" style={{ color: "white" }}>Home&nbsp;</Link>/</p><p><Link to="/About-Us" style={{ color: "white" }}>&nbsp;About Us /</Link></p><p><Link to="/" style={{ color: "white" }}>&nbsp;Why We Exist</Link></p>
                     </div>

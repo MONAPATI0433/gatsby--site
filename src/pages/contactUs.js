@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import Layout from "../components/layout"
 import { Col, Container, Row, Media } from 'react-bootstrap'
 import './contact.css'
-import { Link } from "gatsby"
-import image3 from '../images/bg-contact-p.jpg'
 
 import {
   FaChessQueen
@@ -12,16 +10,11 @@ class contactUs extends Component {
   render() {
     return (
       <Layout location={this.props.location}>
-        <img src={image3} style={{ height: "300px", width: "100%", }} />
-        <div className="d-flex" style={{ position: "relative", top: "-18.9rem", left: "75px", fontSize: "12px" }}>
-                        <p className="text-white" ><Link to="/" style={{ color: "white" }}>Home&nbsp;</Link>/</p><p><Link to="/About-Us" style={{ color: "white" }}>&nbsp;About Us /</Link></p><p><Link to="/" style={{ color: "white" }}>&nbsp;Contact</Link></p>
-                    </div>
-                    <h2 className="text-white" style={{ position: "relative", top: "-16rem", left: "75px" }}>Contact</h2>
         <div style={{
           backgroundColor: "#000000", width: "100%", height: "50px",
-          lineHeight: '1.3rem',marginTop:"-108px"
+          lineHeight: '1.3rem'
         }}>
-          <h5 className="text-center" style={{ color: "#c3baba", fontWeight: "robot", position: "relative", top: "10px", fontSize: '16px' }}>
+          <h5 className="text-center" style={{ color: "#c3baba", fontWeight: "robot", position: "relative", top: "15px", fontSize: '16px' }}>
             <span className="text-white" style={{ fontWeight: "bold" }}>
               THANKS&nbsp;&nbsp;
                           </span>
