@@ -6,10 +6,11 @@
   // import { useStaticQuery, graphql } from "gatsby"
   // import Button from "../components/button"
   // import Img from "gatsby-image"
-  import Image from '../components/image'
+  // import Image from '../components/image'
   import "./main.css"
-  // import image1 from '../images/308-p.jpg'
-  // import image2 from '../images/sameer-book.png'
+  import image1 from '../images/bg-aiqrations-p.jpg'
+  import image2 from '../images/bg-Alliance-p.jpg'
+  import image3 from '../images/bg-academic-p.jpg'
 import {
   Container,
   Card,
@@ -18,7 +19,8 @@ import {
   Col,
   Row,
   CardGroup,
-  Form
+  Form,
+  Carousel
 } from "react-bootstrap"
 import {
   FaHandshake,
@@ -53,7 +55,32 @@ import { GiTeamIdea, GiChessKnight } from "react-icons/gi"
             title="Home"
             keywords={[`blog`, `gatsby`, `javascript`, `react`]}
           />
-              <Image />
+              {/* <Image /> */}
+              <div>
+              <Carousel>
+  <Carousel.Item>
+  <img src={image1} alt="no image" style={{ height: "300px", width: "100%" }} />
+    <Carousel.Caption>
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+  <img src={image2} alt="no image" style={{ height: "300px", width: "100%" }} />
+    <Carousel.Caption>
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+  <img src={image3} alt="no image" style={{ height: "300px", width: "100%" }} />
+    <Carousel.Caption>
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+              </div>
           <Container className="text-center mt-5">
       <CardColumns bg="light">
         <Card>
