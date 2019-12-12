@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: MONAPATI0433/personal-blog
+  repo: MONAPATI0433/gatsby--site
 
 media_folder: static/assets
 public_folder: assets
