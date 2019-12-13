@@ -26,6 +26,7 @@ class BlogPostTemplate extends React.Component {
             display: `block`,
             marginBottom: rhythm(1),
             marginTop: rhythm(-1),
+            fontSize: "13px"
           }}
         >
           {post.frontmatter.date}
@@ -49,9 +50,9 @@ class BlogPostTemplate extends React.Component {
           }}
         >
           <li
-          style={{
-            listStyleType:'none !important' ,
-          }}
+            style={{
+              listStyleType: 'none !important',
+            }}
           >
             {previous && (
               <Link to={`blog${previous.fields.slug}`} rel="prev">

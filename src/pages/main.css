@@ -124,5 +124,12 @@ p {
 
 
 
-
+  .align-self-center {
+    border-width: 0 0 5px;
+    border-style: solid;
+    margin: 40px auto;
+    width: fit-content;
+    line-height: 4rem;
+    border-bottom: 3px solid rgb(224, 164, 88);
+  }
   

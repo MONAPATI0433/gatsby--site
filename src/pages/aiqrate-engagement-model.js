@@ -27,7 +27,7 @@
                             <p className="mt-3 normal-para" >AIQRATE deploys multiple and unique engagement models for providing advisory services and consulting offerings</p>
                         </Container>
                         <Container className="mt-5 text-center">
-                            <h1 className="mb-5"><strong>THIS </strong>SPANS</h1>
+                            <h1 className="mb-5 align-self-center"><strong>THIS </strong>SPANS</h1>
                         </Container>
                         <Container className="mt-4 text-center">
 

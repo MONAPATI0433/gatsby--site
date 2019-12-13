@@ -34,7 +34,7 @@
           <Link to="/aiqrate-team"><NavDropdown.Item href="#action/3.2">AIQRATE Team</NavDropdown.Item></Link>
           <Link to="/being-ai-positive"><NavDropdown.Item href="#action/3.2">Being Al +ve</NavDropdown.Item></Link>
           <Link to="/aiqrate-alliance-advisory-forum"><NavDropdown.Item href="#action/3.3">AIQRATE Alliance Advisory Forum</NavDropdown.Item></Link>
-          <Link to="/"><NavDropdown.Item href="#action/3.3">In The News</NavDropdown.Item></Link>
+          <Link to="/in-the-news"><NavDropdown.Item href="#action/3.3">In The News</NavDropdown.Item></Link>
         <Link to="/contactUs"> <NavDropdown.Item  href="#link" >Contact Us</NavDropdown.Item> </Link>
         </NavDropdown>
       </Nav>

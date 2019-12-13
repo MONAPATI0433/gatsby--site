@@ -22,13 +22,13 @@ class contactUs extends Component {
                           </h5>
         </div>
 
-        <div className="mb-5" style={{backgroundColor: "#f4f4f4",height:"200px"}}>
+        <div className="mb-5" style={{ backgroundColor: "#f4f4f4", height: "200px" }}>
           <Row>
             <Col className="mt-5 ml-5">
               <Media>
                 <FaChessQueen />
                 <Media.Body>
-                  <p className="mt-2" >BECOME THE<br></br>
+                  <p className="mt-2 " >BECOME THE<br></br>
                     CLIENT</p>
                   <hr style={{ height: "2px", backgroundColor: "#0076da", position: "relative", left: "-55px" }}></hr>
                 </Media.Body>
@@ -68,7 +68,7 @@ class contactUs extends Component {
         <Container className="mt-5 mb-3 text-center">
           <Row>
             <div className="text-center">
-              <h4><strong>BECOME </strong>THE CLIENT</h4>
+              <h4 className="align-self-center"><strong>BECOME </strong>THE CLIENT</h4>
               <p className="normal-para" style={{ fontSize: "14px" }}>Please leave your details with us with your query and we will get in touch with you swiftly. Alternatively, please reach directly over call or WhatsApp our Chief Client Officer , Rohan @</p>
               <p className="normal-para" style={{ fontSize: "14px" }}>+91  9818002307</p>
             </div>
@@ -130,7 +130,7 @@ class contactUs extends Component {
                     <p className="card-text normal-para text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <p className="text-center normal-para"><strong>Chief Client Officer, Rohan</strong></p>
                     <p className="text-center normal-para">+91 9818002307</p>
-                    <p className="text-center normal-para "><a href="">abc@aiqrate.ai</a></p>
+                    <p className="text-center normal-para "><a href="" style={{ color: " blue" }}>abc@aiqrate.ai</a></p>
                   </div>
                 </div>
 
@@ -143,7 +143,7 @@ class contactUs extends Component {
                     <p className="card-text normal-para text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <p className="text-center normal-para"><strong>Chief Technology Officer, NK</strong></p>
                     <p className="text-center normal-para">+91 9818002307</p>
-                    <p className="text-center normal-para"><a href="">abc@aiqrate.ai</a></p>
+                    <p className="text-center normal-para"><a href="" style={{ color: " blue" }}>abc@aiqrate.ai</a></p>
                   </div>
                 </div>
               </div>
@@ -155,7 +155,7 @@ class contactUs extends Component {
                     <p className="card-text normal-para text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <p className="text-center normal-para"><strong>CEO, Sameer</strong></p>
                     <p className="text-center normal-para">+91 9818002307</p>
-                    <p className="text-center normal-para"><a href="" style={{Color:"#0E76BC"}}>abc@aiqrate.ai</a></p>
+                    <p className="text-center normal-para"><a href="" style={{ color: " blue" }}>abc@aiqrate.ai</a></p>
                   </div>
                 </div>
               </div>
