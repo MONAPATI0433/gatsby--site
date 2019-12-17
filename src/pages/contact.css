@@ -31,3 +31,9 @@
     transform: translate3d(0, -100%, 0);
     opacity: 1;
   }
+
+  @media  screen and (max-width: 460px)  {
+    .media {
+      margin-top: 0px !important;
+    }
+}

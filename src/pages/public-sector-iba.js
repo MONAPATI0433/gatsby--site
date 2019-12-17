@@ -12,7 +12,7 @@ class PUBLICSECTORIBA extends Component {
                 <Layout location={this.props.location}>
                     <img src={image3} style={{ height: "300px", width: "100%" }} />
                     <div className="d-flex" style={{ position: "relative", top: "-18.9rem", left: "75px", fontSize: "12px" }}>
-                        <p className="text-white" ><Link to="/" style={{ color: "white" }}>Home&nbsp;</Link>/</p><p><Link to="/consulting" style={{ color: "white" }}>&nbsp;Consulting /</Link></p><p><Link to="/" style={{ color: "white" }}>&nbsp;public-sector-institutions-business-associations</Link></p>
+                        <p className="text-white" ><Link to="/" style={{ color: "white" }}>Home&nbsp;</Link>/</p><p><Link to="/consulting"  style={{ color: "white" }}>&nbsp;Consulting /</Link></p><p><Link to="/" style={{ color: "white" }}>&nbsp;public-sector-institutions-business-associations</Link></p>
                     </div>
                     <h2 className="text-white" style={{ position: "relative", top: "-16rem", left: "75px" }}>public-sector-institutions-business-associations</h2>
                     <Container style={{ marginTop: "-70px" }}>

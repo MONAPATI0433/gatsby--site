@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Layout from "../components/layout"
-import { Container, Row, Card, Col } from "react-bootstrap"
+import { Container, Row, Card,  } from "react-bootstrap"
 import { Link } from "gatsby"
 import image3 from '../images/bg-news-p.jpg'
 import image4 from '../images/bg-aiqrations-p.jpg'

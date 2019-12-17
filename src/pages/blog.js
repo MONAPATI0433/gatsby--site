@@ -6,7 +6,17 @@ import { rhythm } from "../utils/typography"
 // import Button from "../components/button"
 import image3 from '../images/bg-BeingAI-p.jpg'
 import image4 from '../images/bg-aiqrations-p.jpg'
+import Pagination from 'react-bootstrap/Pagination'
 
+let active = 2;
+let items = [];
+for (let number = 1; number <= 5; number++) {
+  items.push(
+    <Pagination.Item key={number} active={number === active}>
+      {number}
+    </Pagination.Item>,
+  );
+}
 
 class Blog extends React.Component {
   render() {
@@ -24,7 +34,7 @@ class Blog extends React.Component {
                   
         <SEO title="All posts" />
         {/* <Bio /> */}
-        <div className="container text-center mb-5 d-flex mr-5">
+        <div className="container mr-5  d-flex">
        <div className="row">
        <p>AIQRATE team has an extensive line up of knowledge content, insights & opinions, reports and analysis in AI built over the years.  We are industry builders as well as key opinion leaders in AI and have been associated with several Enterprises, GCCs, SMBs, Startups, VC/PE firms, Academic Institutes and Business Associations advising and consulting with them on their AI strategies, interventions, programs and engagements.</p>
           {posts.map(({ node }) => {
@@ -60,6 +70,9 @@ class Blog extends React.Component {
         {/* <Link to="/">
           <Button marginTop="85px">Go Home</Button>
         </Link> */}
+        <div>
+    <Pagination size="sm">{items}</Pagination>
+  </div>
       </Layout>
     )
   }
