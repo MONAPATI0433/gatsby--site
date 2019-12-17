@@ -1,4 +1,5 @@
 ---
+featuredImage: /assets/card-1-1-1.jpg
 path: About
 date: 2019-12-17T06:14:16.527Z
 title: Detalies
