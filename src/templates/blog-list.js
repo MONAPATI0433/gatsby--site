@@ -3,11 +3,9 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import PaginationLink from '../components/PaginationLink'
 // import SEO from "../components/seo"
-const BlogList = props => {
-  const { data } = this.props
-  const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMdx.edges
-  const { currentPage, numPages } = this.props.pageContext
+const BlogList = (props) => {
+    const posts = props.data.allMdx.edges
+    const {currentPage,numberOfPages} = props.pageContext
     return (
       <Layout pageTitle={`page: ${currentPage}`}>
      {posts.map(({ node }) => {
