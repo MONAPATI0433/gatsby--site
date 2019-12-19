@@ -62,7 +62,7 @@ const templates = {
 if (isFirstPage) return
       createPage({
         path:i === 0 ? `/blog` : `/${i + 1}`,
-        component:templates.path.resolve(`./src/templates/blog-list.js`),
+        component:templates. blogList,
         context: {
           limit: postsPerPage,
           skip: i * postsPerPage,
