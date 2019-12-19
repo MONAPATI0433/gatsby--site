@@ -6,7 +6,7 @@ const { createPage } = actions
 
 const templates = {
   blogPost : path.resolve(`./src/templates/blog-post.js`),
-   blogList : path.resolve(`./src/templates/blog-list.js`),
+  //  blogList : path.resolve(`./src/templates/blog-list.js`),
 }
 
  return graphql(
@@ -54,23 +54,23 @@ const templates = {
     })
 
     
-    const postsPerPage = 3
-    const numberOfPages = Math.ceil(posts.length / postsPerPage)
-    Array.from({ length: numberOfPages }).forEach((_, i) => {
-      const isFirstPage = i === 0
-      const currentPage = i + 1
-if (isFirstPage) return
-      createPage({
-        path:i === 0 ? `/blog` : `/${i + 1}`,
-        component:templates. blogList,
-        context: {
-          limit: postsPerPage,
-          skip: i * postsPerPage,
-          numberOfPages,
-          currentPage: i + 1,
-        },
-      })
-    })
+//     const postsPerPage = 3
+//     const numberOfPages = Math.ceil(posts.length / postsPerPage)
+//     Array.from({ length: numberOfPages }).forEach((_, i) => {
+//       const isFirstPage = i === 0
+//       const currentPage = i + 1
+// if (isFirstPage) return
+//       createPage({
+//         path:i === 0 ? `/blog` : `/${i + 1}`,
+//         component:templates. blogList,
+//         context: {
+//           limit: postsPerPage,
+//           skip: i * postsPerPage,
+//           numberOfPages,
+//           currentPage: i + 1,
+//         },
+//       })
+//     })
     
   })
 }

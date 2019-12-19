@@ -6,19 +6,19 @@ import { rhythm } from "../utils/typography"
 // import Button from "../components/button"
 import image3 from '../images/bg-BeingAI-p.jpg'
 import image4 from '../images/bg-aiqrations-p.jpg'
-// import Pagination from 'react-bootstrap/Pagination'
-import PaginationLink from '../components/PaginationLink'
+import Pagination from 'react-bootstrap/Pagination'
+// import PaginationLink from '../components/PaginationLink'
 import "./main.css"
 
-// let active = 1;
-// let items = [];
-// for (let number = 1; number <= 4; number++) {
-//   items.push(
-//     <Pagination.Item key={number} active={number === active}>
-//       {number}
-//     </Pagination.Item>,
-//   );
-// }
+let active = 1;
+let items = [];
+for (let number = 1; number <= 4; number++) {
+  items.push(
+    <Pagination.Item key={number} active={number === active}>
+      {number}
+    </Pagination.Item>,
+  );
+}
 
 
 class Blog extends React.Component {
@@ -26,8 +26,8 @@ class Blog extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMdx.edges
-    const postsPerPage = 2;
-    let numberOfPages
+    // const postsPerPage = 2;
+    // let numberOfPages
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -44,7 +44,7 @@ class Blog extends React.Component {
             <p>AIQRATE team has an extensive line up of knowledge content, insights & opinions, reports and analysis in AI built over the years.  We are industry builders as well as key opinion leaders in AI and have been associated with several Enterprises, GCCs, SMBs, Startups, VC/PE firms, Academic Institutes and Business Associations advising and consulting with them on their AI strategies, interventions, programs and engagements.</p>
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
-              numberOfPages = Math.ceil(data.allMdx. totalCount / postsPerPage)
+              // numberOfPages = Math.ceil(data.allMdx. totalCount / postsPerPage)
            
               return (
                 <div className="blog" style={{ border: "3px solid #f4f4f4", marginTop: "40px", width: "30%", marginLeft: "5px", height: "420px", }}>
@@ -77,7 +77,7 @@ class Blog extends React.Component {
         {/* <Link to="/">
           <Button marginTop="85px">Go Home</Button>
         </Link> */}
-        {/* <div className="mt-5 ml-3" >
+        <div className="mt-5 ml-3" >
           <Pagination size="md">
             <Pagination.First />
             <Pagination.Prev />
@@ -85,9 +85,9 @@ class Blog extends React.Component {
             <Pagination.Next />
             <Pagination.Last />
           </Pagination>
-        </div> */}
+        </div>
 
-        <PaginationLink currentPage={1} numberOfPages = {numberOfPages} />
+        {/* <PaginationLink currentPage={1} numberOfPages = {numberOfPages} /> */}
       </Layout>
     )
   }
