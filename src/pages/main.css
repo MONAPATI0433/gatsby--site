@@ -133,3 +133,22 @@ p {
     border-bottom: 3px solid rgb(224, 164, 88);
   }
   
+
+  .page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -2px;
+    line-height: 1.25;
+    color: #8B8F94;
+    background-color: #fff;
+    border: 1px solid #FFFFFF;
+    background: #F9F9F9 !important;
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #1E252F !important;
+  border-color: #1E252F !important;
+}

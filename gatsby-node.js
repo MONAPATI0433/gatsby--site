@@ -2,10 +2,14 @@ const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+const { createPage } = actions
 
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
-  return graphql(
+const templates = {
+  blogPost : path.resolve(`./src/templates/blog-post.js`),
+   blogList : path.resolve(`./src/templates/blog-list.js`),
+}
+
+ return graphql(
     `
       {
         allMdx(
@@ -25,6 +29,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `
+
   ).then(result => {
     if (result.errors) {
       throw result.errors
@@ -39,7 +44,7 @@ exports.createPages = ({ graphql, actions }) => {
 
       createPage({
         path: `blog${post.node.fields.slug}`,
-        component: blogPost,
+        component:templates.blogPost,
         context: {
           slug: post.node.fields.slug,
           previous,
@@ -48,7 +53,25 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
 
-    return null
+    
+    const postsPerPage = 3
+    const numberOfPages = Math.ceil(posts.length / postsPerPage)
+    Array.from({ length: numberOfPages }).forEach((_, i) => {
+      const isFirstPage = i === 0
+      const currentPage = i + 1
+if (isFirstPage) return
+      createPage({
+        path:i === 0 ? `/blog` : `/${i + 1}`,
+        component:templates.path.resolve(`./src/templates/blog-list.js`),
+        context: {
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numberOfPages,
+          currentPage: i + 1,
+        },
+      })
+    })
+    
   })
 }
 

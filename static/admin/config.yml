@@ -11,6 +11,7 @@ collections:
     folder: content/blog
     create: true
     fields:
+      - { name: "featuredImage", label: "Featured Image", widget: "image" }
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
